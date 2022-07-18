@@ -5,7 +5,7 @@ function App() {
   const msg = () => console.log('Hello');
   return (
     <>
-      <Empty name='' calculatedValue={6 + 4}>
+      <Empty name='Ali' calculatedValue={6 + 4} Component={Dynamic}>
         sent children
       </Empty>
       <br />

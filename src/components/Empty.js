@@ -1,12 +1,13 @@
 import React from 'react';
 const Empty = ({children, ...rest}) => {
   const jsStyle = {width: 150, height: 2, backgroundColor: '#C00'};
+  const {name} = rest
   return (
     <>
       <p>First paragraph</p>
       <p>Seccond paragraph</p>
       <p>
-        {children}, {rest.calculatedValue}
+        My name is: {name}, {children}, {rest.calculatedValue}
       </p>
       <div>
         {[1, 1, 2, 3].map((num, i) => (
